@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconName</key>
+	<string>AppIcon
+AppIcon
+AppIcon
+AppIcon</string>
+	<key>Privacy - NSFaceIDUsageDescription</key>
+	<string>Confirm ID to keep your app secure from unauthorized use and access.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Access needed to scan QR codes to send and receive Bitcoin payments.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Split uses your location to show nearby bitcoin-accepting merchants on the BTC merchant map.</string>
+	<key>SplitBaseScheme</key>
+	<string>$(BASE_SCHEME)</string>
+	<key>SplitBaseHost</key>
+	<string>$(BASE_HOST)</string>
+	<key>SplitAppGroupIdentifier</key>
+	<string>$(SPLIT_SHARED_APP_GROUP_IDENTIFIER)</string>
+	<key>SplitSharedKeychainAccessGroup</key>
+	<string>$(AppIdentifierPrefix)$(SPLIT_SHARED_KEYCHAIN_GROUP_SUFFIX)</string>
+	<key>SplitKeychainService</key>
+	<string>$(SPLIT_KEYCHAIN_SERVICE)</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>SplitMessagingPushEnvironment</key>
+	<string>$(MESSAGING_PUSH_ENV)</string>
+	<key>SplitMessagingIdentityDomain</key>
+	<string>$(MESSAGING_IDENTITY_DOMAIN)</string>
+	<key>SplitLightningAddressDomain</key>
+	<string>$(LIGHTNING_ADDRESS_DOMAIN)</string>
+</dict>
+</plist>

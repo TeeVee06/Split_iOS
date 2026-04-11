@@ -1,0 +1,5 @@
+// Copy this file to LocalRelease.xcconfig and set your own release backend.
+//
+// Example:
+// BASE_SCHEME = https
+// BASE_HOST = your-production-backend.example.com

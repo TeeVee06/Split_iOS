@@ -1,0 +1,60 @@
+{
+  "originHash" : "0a37881889696b4cc9672ce5d0801dcb063042e11bc75628b4289fc195c6361c",
+  "pins" : [
+    {
+      "identity" : "bip39.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tesseract-one/Bip39.swift.git",
+      "state" : {
+        "revision" : "bb2b82539d685e1457493b695cdc8e4dcff97c92",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "breez-sdk-spark-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/breez/breez-sdk-spark-swift",
+      "state" : {
+        "revision" : "512df7f5ebd7e7de0f7f42a523631d4ed5ddd293",
+        "version" : "0.12.2"
+      }
+    },
+    {
+      "identity" : "jwtdecode.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/JWTDecode.swift",
+      "state" : {
+        "revision" : "36a5ce735a61c4bc119593f43ce2c027b4ca7392",
+        "version" : "3.3.0"
+      }
+    },
+    {
+      "identity" : "secp256k1.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/damus-io/secp256k1.swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "40b4b38b3b1c83f7088c76189a742870e0ca06a9"
+      }
+    },
+    {
+      "identity" : "swift-bigint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mkrd/Swift-BigInt.git",
+      "state" : {
+        "revision" : "b07e961f4c999671cf8c2dc80e740899e8946013",
+        "version" : "2.3.0"
+      }
+    },
+    {
+      "identity" : "uncommoncrypto.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tesseract-one/UncommonCrypto.swift.git",
+      "state" : {
+        "revision" : "075344faec47dadba98bef6a319e310c98be0820",
+        "version" : "0.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}

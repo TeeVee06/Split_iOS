@@ -1,0 +1,11 @@
+#include "Base.xcconfig"
+
+// Public-safe default for debug builds.
+BASE_SCHEME = http
+BASE_HOST = localhost:3000
+MESSAGING_PUSH_ENV = dev
+MESSAGING_IDENTITY_DOMAIN = example.com
+LIGHTNING_ADDRESS_DOMAIN = example.com
+
+// Optional local override, ignored by git.
+#include? "LocalDebug.xcconfig"

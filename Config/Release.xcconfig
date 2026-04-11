@@ -1,0 +1,12 @@
+#include "Base.xcconfig"
+
+// Public-safe default for release builds.
+// Replace privately in LocalRelease.xcconfig when producing real Split builds.
+BASE_SCHEME = https
+BASE_HOST = example.invalid
+MESSAGING_PUSH_ENV = prod
+MESSAGING_IDENTITY_DOMAIN = example.com
+LIGHTNING_ADDRESS_DOMAIN = example.com
+
+// Optional local override, ignored by git.
+#include? "LocalRelease.xcconfig"

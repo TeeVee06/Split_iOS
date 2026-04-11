@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB90ECE52F6F28F10013E3C8 /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = FB90ECE42F6F28F10013E3C8 /* secp256k1 */; };
+		FBC95F132D337DD40029F7AF /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = FBC95F122D337DD40029F7AF /* JWTDecode */; };
+		FBC95F172D337DF30029F7AF /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC95F152D337DEB0029F7AF /* CoreNFC.framework */; };
+		FBCCE6F92EDF682E0014D403 /* Bip39 in Frameworks */ = {isa = PBXBuildFile; productRef = FBCCE6F82EDF682E0014D403 /* Bip39 */; };
+		FBE3F2622F29393B00A5040C /* BreezSdkSpark in Frameworks */ = {isa = PBXBuildFile; productRef = FBE3F2612F29393B00A5040C /* BreezSdkSpark */; };
+		FC4A1C9A2B00010300000003 /* Split Share Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC4A1C9A2B00010100000001 /* Split Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC4A1C9A2B00011000000010 /* BreezSdkSpark in Frameworks */ = {isa = PBXBuildFile; productRef = FBE3F2612F29393B00A5040C /* BreezSdkSpark */; };
+		FC4A1C9A2B00011100000011 /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = FB90ECE42F6F28F10013E3C8 /* secp256k1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBE8F2282D337A1300EAA107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE8F20F2D337A0E00EAA107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE8F2162D337A0E00EAA107;
+			remoteInfo = "Split Rewards";
+		};
+		FBE8F2322D337A1300EAA107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE8F20F2D337A0E00EAA107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE8F2162D337A0E00EAA107;
+			remoteInfo = "Split Rewards";
+		};
+		FC4A1C9A2B00010D0000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE8F20F2D337A0E00EAA107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC4A1C9A2B00010500000005;
+			remoteInfo = "Split Share Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC4A1C9A2B00010400000004 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC4A1C9A2B00010300000003 /* Split Share Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBC95F152D337DEB0029F7AF /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		FBE8F2172D337A0E00EAA107 /* Split Rewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split Rewards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE8F2272D337A1300EAA107 /* Split RewardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Split RewardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE8F2312D337A1300EAA107 /* Split RewardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Split RewardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4A1C9A2B00000100000001 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		FC4A1C9A2B00000200000002 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		FC4A1C9A2B00000300000003 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		FC4A1C9A2B00000400000004 /* LocalDebug.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LocalDebug.xcconfig.example; sourceTree = "<group>"; };
+		FC4A1C9A2B00000500000005 /* LocalRelease.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LocalRelease.xcconfig.example; sourceTree = "<group>"; };
+		FC4A1C9A2B00010100000001 /* Split Share Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Split Share Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4A1C9A2B00010E0000000E /* Split Share Extension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Split Share Extension-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FBE8F2192D337A0E00EAA107 /* Split Rewards */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Split Rewards";
+			sourceTree = "<group>";
+		};
+		FBE8F22A2D337A1300EAA107 /* Split RewardsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Split RewardsTests";
+			sourceTree = "<group>";
+		};
+		FBE8F2342D337A1300EAA107 /* Split RewardsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Split RewardsUITests";
+			sourceTree = "<group>";
+		};
+		FC4A1C9A2B00010200000002 /* Split Share Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Split Share Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBE8F2142D337A0E00EAA107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE3F2622F29393B00A5040C /* BreezSdkSpark in Frameworks */,
+				FB90ECE52F6F28F10013E3C8 /* secp256k1 in Frameworks */,
+				FBCCE6F92EDF682E0014D403 /* Bip39 in Frameworks */,
+				FBC95F132D337DD40029F7AF /* JWTDecode in Frameworks */,
+				FBC95F172D337DF30029F7AF /* CoreNFC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F2242D337A1300EAA107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F22E2D337A1300EAA107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4A1C9A2B00010600000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4A1C9A2B00011000000010 /* BreezSdkSpark in Frameworks */,
+				FC4A1C9A2B00011100000011 /* secp256k1 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC95F142D337DEB0029F7AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC95F152D337DEB0029F7AF /* CoreNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBE8F20E2D337A0E00EAA107 = {
+			isa = PBXGroup;
+			children = (
+				FC4A1C9A2B00000600000006 /* Config */,
+				FC4A1C9A2B00010E0000000E /* Split Share Extension-Info.plist */,
+				FBE8F2192D337A0E00EAA107 /* Split Rewards */,
+				FC4A1C9A2B00010200000002 /* Split Share Extension */,
+				FBE8F22A2D337A1300EAA107 /* Split RewardsTests */,
+				FBE8F2342D337A1300EAA107 /* Split RewardsUITests */,
+				FBC95F142D337DEB0029F7AF /* Frameworks */,
+				FBE8F2182D337A0E00EAA107 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBE8F2182D337A0E00EAA107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8F2172D337A0E00EAA107 /* Split Rewards.app */,
+				FC4A1C9A2B00010100000001 /* Split Share Extension.appex */,
+				FBE8F2272D337A1300EAA107 /* Split RewardsTests.xctest */,
+				FBE8F2312D337A1300EAA107 /* Split RewardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC4A1C9A2B00000600000006 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FC4A1C9A2B00000100000001 /* Base.xcconfig */,
+				FC4A1C9A2B00000200000002 /* Debug.xcconfig */,
+				FC4A1C9A2B00000300000003 /* Release.xcconfig */,
+				FC4A1C9A2B00000400000004 /* LocalDebug.xcconfig.example */,
+				FC4A1C9A2B00000500000005 /* LocalRelease.xcconfig.example */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBE8F2162D337A0E00EAA107 /* Split Rewards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE8F23B2D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split Rewards" */;
+			buildPhases = (
+				FBE8F2132D337A0E00EAA107 /* Sources */,
+				FBE8F2142D337A0E00EAA107 /* Frameworks */,
+				FBE8F2152D337A0E00EAA107 /* Resources */,
+				FC4A1C9A2B00010400000004 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4A1C9A2B00010C0000000C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FBE8F2192D337A0E00EAA107 /* Split Rewards */,
+			);
+			name = "Split Rewards";
+			packageProductDependencies = (
+				FBC95F122D337DD40029F7AF /* JWTDecode */,
+				FBCCE6F82EDF682E0014D403 /* Bip39 */,
+				FBE3F2612F29393B00A5040C /* BreezSdkSpark */,
+				FB90ECE42F6F28F10013E3C8 /* secp256k1 */,
+			);
+			productName = "Split Rewards";
+			productReference = FBE8F2172D337A0E00EAA107 /* Split Rewards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBE8F2262D337A1300EAA107 /* Split RewardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE8F23E2D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split RewardsTests" */;
+			buildPhases = (
+				FBE8F2232D337A1300EAA107 /* Sources */,
+				FBE8F2242D337A1300EAA107 /* Frameworks */,
+				FBE8F2252D337A1300EAA107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE8F2292D337A1300EAA107 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FBE8F22A2D337A1300EAA107 /* Split RewardsTests */,
+			);
+			name = "Split RewardsTests";
+			packageProductDependencies = (
+			);
+			productName = "Split RewardsTests";
+			productReference = FBE8F2272D337A1300EAA107 /* Split RewardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBE8F2302D337A1300EAA107 /* Split RewardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE8F2412D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split RewardsUITests" */;
+			buildPhases = (
+				FBE8F22D2D337A1300EAA107 /* Sources */,
+				FBE8F22E2D337A1300EAA107 /* Frameworks */,
+				FBE8F22F2D337A1300EAA107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE8F2332D337A1300EAA107 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FBE8F2342D337A1300EAA107 /* Split RewardsUITests */,
+			);
+			name = "Split RewardsUITests";
+			packageProductDependencies = (
+			);
+			productName = "Split RewardsUITests";
+			productReference = FBE8F2312D337A1300EAA107 /* Split RewardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FC4A1C9A2B00010500000005 /* Split Share Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4A1C9A2B00010900000009 /* Build configuration list for PBXNativeTarget "Split Share Extension" */;
+			buildPhases = (
+				FC4A1C9A2B00010800000008 /* Sources */,
+				FC4A1C9A2B00010600000006 /* Frameworks */,
+				FC4A1C9A2B00010700000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FC4A1C9A2B00010200000002 /* Split Share Extension */,
+			);
+			name = "Split Share Extension";
+			packageProductDependencies = (
+				FBE3F2612F29393B00A5040C /* BreezSdkSpark */,
+				FB90ECE42F6F28F10013E3C8 /* secp256k1 */,
+			);
+			productName = "Split Share Extension";
+			productReference = FC4A1C9A2B00010100000001 /* Split Share Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBE8F20F2D337A0E00EAA107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FBE8F2162D337A0E00EAA107 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FBE8F2262D337A1300EAA107 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FBE8F2162D337A0E00EAA107;
+					};
+					FBE8F2302D337A1300EAA107 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FBE8F2162D337A0E00EAA107;
+					};
+					FC4A1C9A2B00010500000005 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = FBE8F2122D337A0E00EAA107 /* Build configuration list for PBXProject "Split Rewards" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBE8F20E2D337A0E00EAA107;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FBC95F112D337DD40029F7AF /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				FBCCE6F72EDF682E0014D403 /* XCRemoteSwiftPackageReference "Bip39.swift" */,
+				FBE3F2602F29393B00A5040C /* XCRemoteSwiftPackageReference "breez-sdk-spark-swift" */,
+				FB90ECE32F6F28F10013E3C8 /* XCRemoteSwiftPackageReference "secp256k1" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FBE8F2182D337A0E00EAA107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBE8F2162D337A0E00EAA107 /* Split Rewards */,
+				FC4A1C9A2B00010500000005 /* Split Share Extension */,
+				FBE8F2262D337A1300EAA107 /* Split RewardsTests */,
+				FBE8F2302D337A1300EAA107 /* Split RewardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBE8F2152D337A0E00EAA107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F2252D337A1300EAA107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F22F2D337A1300EAA107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4A1C9A2B00010700000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBE8F2132D337A0E00EAA107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F2232D337A1300EAA107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE8F22D2D337A1300EAA107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4A1C9A2B00010800000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBE8F2292D337A1300EAA107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE8F2162D337A0E00EAA107 /* Split Rewards */;
+			targetProxy = FBE8F2282D337A1300EAA107 /* PBXContainerItemProxy */;
+		};
+		FBE8F2332D337A1300EAA107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE8F2162D337A0E00EAA107 /* Split Rewards */;
+			targetProxy = FBE8F2322D337A1300EAA107 /* PBXContainerItemProxy */;
+		};
+		FC4A1C9A2B00010C0000000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC4A1C9A2B00010500000005 /* Split Share Extension */;
+			targetProxy = FC4A1C9A2B00010D0000000D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBE8F2392D337A1300EAA107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBE8F23A2D337A1300EAA107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBE8F23C2D337A1300EAA107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4A1C9A2B00000200000002 /* Debug.xcconfig */;
+			buildSettings = {
+				APS_ENVIRONMENT = development;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Split Rewards/Split Rewards.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Split Rewards/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Split-Rewards-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Split needs access to your camera to scan QR  codes to scan and receive Bitcoin payments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.6.1;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPLIT_KEYCHAIN_SERVICE = "com.example.SplitRewards";
+				SPLIT_SHARED_APP_GROUP_IDENTIFIER = "group.com.example.splitrewards.share";
+				SPLIT_SHARED_KEYCHAIN_GROUP_SUFFIX = "com.example.splitrewards.shared";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FBE8F23D2D337A1300EAA107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4A1C9A2B00000300000003 /* Release.xcconfig */;
+			buildSettings = {
+				APS_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Split Rewards/Split Rewards.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Split Rewards/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Split-Rewards-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Split needs access to your camera to scan QR  codes to scan and receive Bitcoin payments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.6.1;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPLIT_KEYCHAIN_SERVICE = "com.example.SplitRewards";
+				SPLIT_SHARED_APP_GROUP_IDENTIFIER = "group.com.example.splitrewards.share";
+				SPLIT_SHARED_KEYCHAIN_GROUP_SUFFIX = "com.example.splitrewards.shared";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FBE8F23F2D337A1300EAA107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Split Rewards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Split Rewards";
+			};
+			name = Debug;
+		};
+		FBE8F2402D337A1300EAA107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Split Rewards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Split Rewards";
+			};
+			name = Release;
+		};
+		FBE8F2422D337A1300EAA107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Split Rewards";
+			};
+			name = Debug;
+		};
+		FBE8F2432D337A1300EAA107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Split Rewards";
+			};
+			name = Release;
+		};
+		FC4A1C9A2B00010A0000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4A1C9A2B00000200000002 /* Debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "Split Share Extension/Split Share Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Split Share Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewards.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SPLIT_KEYCHAIN_SERVICE = "com.example.SplitRewards";
+				SPLIT_SHARED_APP_GROUP_IDENTIFIER = "group.com.example.splitrewards.share";
+				SPLIT_SHARED_KEYCHAIN_GROUP_SUFFIX = "com.example.splitrewards.shared";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FC4A1C9A2B00010B0000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4A1C9A2B00000300000003 /* Release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "Split Share Extension/Split Share Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Split Share Extension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.SplitRewards.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SPLIT_KEYCHAIN_SERVICE = "com.example.SplitRewards";
+				SPLIT_SHARED_APP_GROUP_IDENTIFIER = "group.com.example.splitrewards.share";
+				SPLIT_SHARED_KEYCHAIN_GROUP_SUFFIX = "com.example.splitrewards.shared";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBE8F2122D337A0E00EAA107 /* Build configuration list for PBXProject "Split Rewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE8F2392D337A1300EAA107 /* Debug */,
+				FBE8F23A2D337A1300EAA107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE8F23B2D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split Rewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE8F23C2D337A1300EAA107 /* Debug */,
+				FBE8F23D2D337A1300EAA107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE8F23E2D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split RewardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE8F23F2D337A1300EAA107 /* Debug */,
+				FBE8F2402D337A1300EAA107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE8F2412D337A1300EAA107 /* Build configuration list for PBXNativeTarget "Split RewardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE8F2422D337A1300EAA107 /* Debug */,
+				FBE8F2432D337A1300EAA107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4A1C9A2B00010900000009 /* Build configuration list for PBXNativeTarget "Split Share Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4A1C9A2B00010A0000000A /* Debug */,
+				FC4A1C9A2B00010B0000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB90ECE32F6F28F10013E3C8 /* XCRemoteSwiftPackageReference "secp256k1" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/damus-io/secp256k1.swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FBC95F112D337DD40029F7AF /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+		FBCCE6F72EDF682E0014D403 /* XCRemoteSwiftPackageReference "Bip39.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tesseract-one/Bip39.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		FBE3F2602F29393B00A5040C /* XCRemoteSwiftPackageReference "breez-sdk-spark-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/breez/breez-sdk-spark-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB90ECE42F6F28F10013E3C8 /* secp256k1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB90ECE32F6F28F10013E3C8 /* XCRemoteSwiftPackageReference "secp256k1" */;
+			productName = secp256k1;
+		};
+		FBC95F122D337DD40029F7AF /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBC95F112D337DD40029F7AF /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			productName = JWTDecode;
+		};
+		FBCCE6F82EDF682E0014D403 /* Bip39 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBCCE6F72EDF682E0014D403 /* XCRemoteSwiftPackageReference "Bip39.swift" */;
+			productName = Bip39;
+		};
+		FBE3F2612F29393B00A5040C /* BreezSdkSpark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE3F2602F29393B00A5040C /* XCRemoteSwiftPackageReference "breez-sdk-spark-swift" */;
+			productName = BreezSdkSpark;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBE8F20F2D337A0E00EAA107 /* Project object */;
+}

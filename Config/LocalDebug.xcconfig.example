@@ -1,0 +1,5 @@
+// Copy this file to LocalDebug.xcconfig and set your own development backend.
+//
+// Example:
+// BASE_SCHEME = https
+// BASE_HOST = your-dev-backend.example.com

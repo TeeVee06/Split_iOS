@@ -1,0 +1,3 @@
+// Shared base configuration for Split Rewards.
+// Use Debug.xcconfig / Release.xcconfig and optional local overrides to set
+// BASE_SCHEME and BASE_HOST for each build configuration.
